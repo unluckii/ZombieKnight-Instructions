@@ -71,7 +71,7 @@ for row in range(len(tile_map)):
         elif cell == 9:
             my_player = Player(x - 32, y + 32, my_platform_group, my_portal_group, my_bullet_group)
             # noinspection PyTypeChecker
-            my_player_group.add(my_bullet_group)
+            my_player_group.add(my_player)
 
 #Load in a background image (we must resize)
 background_image = pygame.transform.scale(pygame.image.load("images/background.png"), (1280, 736))
